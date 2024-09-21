@@ -1,0 +1,446 @@
+/* Fonte base e global */
+html {
+    font-size: 62.5%;
+}
+
+::selection {
+    background: #F62933; /* Cor de fundo da seleção */
+    color: #fff; /* Cor do texto selecionado */
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header-bg {
+    background: url(../img/bg-header.png) center center no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 760px;
+    background-color: #1D1D1D;
+    padding: 0;
+    margin: 0 !important;
+}
+
+#logo {
+    padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .header-bg {
+        height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-bg {
+        height: 1100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-bg {
+        height: 1400px;
+    }
+
+    #logo {
+        padding: 60px 0 50px;
+    }
+}
+
+.header-bg header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+@media (min-width: 556px) {
+    .header-bg header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-bg header h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-bg header h1 {
+        font-size: 5.8rem;
+    }
+}
+
+/* Botão de cadastro */
+header .cadastro, main .cadastro {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 0;
+    text-align: center;
+    display: block;
+    box-shadow: 8px 8px 0px 0px #D9D9D9;
+    background-color: #fff;
+    transition: .4s;
+    padding: 5px;
+}
+
+header .cadastro {
+    font-size: 2.2rem;
+    width: 200px;
+    margin: 30px auto;
+}
+
+header .cadastro:hover {
+    color: #fff;
+    box-shadow: 8px 8px 0px 0px #fff;
+    background-color: #000;
+}
+
+@media (min-width: 992px) {
+    header .cadastro {
+        width: 300px;
+        font-size: 3rem;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .cadastro {
+        width: 350px;
+        font-size: 3.5rem;
+    }
+}
+
+main .cadastro {
+    font-size: 1.9rem;
+    width: 250px;
+    margin: 30px auto;
+    text-wrap: nowrap;
+}
+
+main .cadastro:hover {
+    color: #fff;
+    box-shadow: 8px 8px 0px 0px #fff;
+    background-color: #000;
+}
+
+@media (min-width: 576px) {
+    main .cadastro {
+        padding: 8px;
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    main .cadastro {
+        width: 300px;
+        font-size: 3rem;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .cadastro {
+        width: 350px;
+        font-size: 2.8rem;
+        margin-top: 30px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    main .cadastro {
+        width: 500px;
+        font-size: 3.2rem;
+        margin-top: 40px;
+    }
+}
+
+/* Efeito */
+.efeito {
+    position: relative;
+}
+
+.efeito::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #1d1d1d, #d3d3d3);
+}
+
+/* Countdown */
+#countdown {
+    font-size: 3.9rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    #countdown {
+        font-size: 7.2rem;
+        padding: 20px 0 0;
+    }
+
+    #countdown::before {
+        content: "";
+        width: 43%;
+        height: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 310px;
+        background: linear-gradient(to right, #1d1d1d, #1f0505, #F62933);
+    }
+}
+
+@media (min-width: 1200px) {
+    #countdown::before {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #countdown::before {
+        width: 35%;
+        left: 624px;
+    }
+}
+
+/* Container de potes */
+#potes {
+    width: 80%;
+}
+
+/* Content Main */
+.main-bg {
+    background-color: #1D1D1D;
+}
+
+main {
+    padding:  40px 0 0 0;
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 80px 0;
+    }
+}
+
+main h2 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 120px;
+    text-align: center;
+}
+
+@media (min-width: 1400px) {
+    main h2 {
+        font-size: 4.8rem;
+        text-align: left;
+    }
+}
+
+main .second-row {
+    padding-top: 50px;
+}
+
+main .second-row .icon {
+    width: 22%;
+}
+
+@media (min-width: 576px) {
+    main .second-row .icon {
+        width: 15%;
+    }
+}
+
+@media (min-width: 768px) {
+    main .second-row .icon {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .second-row .icon {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    main .second-row .icon {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1400px) {
+    main .second-row .icon {
+        width: 40%;
+    }
+}
+
+main .icon-desc {
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+@media (min-width: 576px) {
+    main .icon-desc {
+        font-size: 3rem;
+        padding: 20px 0 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    main .icon-desc {
+        font-size: 2.8rem;
+        padding: 20px 0 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .icon-desc {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main .icon-desc {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    main .icon-desc {
+        font-size: 3.2rem;
+    }
+}
+
+.footer {
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        width: 825px;
+    }
+}
+
+.footer h2 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media (min-width: 1400px) {
+    .footer h2 {
+        font-size: 4.8rem;
+        text-align: left;
+    }
+}
+
+.footer form input {
+    border: 0;
+    border-bottom: 3px solid #939393;
+    font-size: 1.9rem;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer form input::placeholder {
+    font-size: 1.9rem;
+    color: #939393;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+    .footer form input::placeholder {
+        font-size: 2.5rem;
+        color: #939393;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .footer form input {
+        border: 0;
+        border-bottom: 3px solid #939393;
+        font-size: 2.4rem;
+        color: #fff !important;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.footer form input:focus {
+    box-shadow: none;
+}   
+
+.footer form button {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 0;
+    text-align: center;
+    display: block;
+    box-shadow: 8px 8px 0px 0px #D9D9D9;
+    background-color: #fff;
+    transition: .4s;
+    padding: 5px;
+    width: 200px;
+    margin: 40px auto;
+}
+
+.footer form button:hover{
+    color: #fff;
+    box-shadow: 8px 8px 0px 0px #fff;
+    background-color: #000;
+}
+
+@media (min-width: 1024px) {
+    .footer form button {
+        text-decoration: none;
+        font-size: 2.8rem;
+        color: #000;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border: 0;
+        text-align: center;
+        display: block;
+        box-shadow: 8px 8px 0px 0px #D9D9D9;
+        background-color: #fff;
+        transition: .4s;
+        padding: 5px;
+        width: 200px;
+        margin: 40px auto;
+    }
+}
+
+#rights p {
+    margin: 60px 0 30px 0;
+    text-transform: uppercase;
+}
+
