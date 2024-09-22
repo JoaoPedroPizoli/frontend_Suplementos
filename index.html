@@ -91,30 +91,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script>
-        // URL da API (ajuste conforme o endereço do seu back-end na Vercel)
+
         const API_URL = 'https://suplementos-production-0c41.up.railway.app';
 
-        // Selecionando o formulário
         const formulario = document.getElementById('formulario');
 
-        // Evento de envio do formulário
         formulario.addEventListener('submit', async (event) => {
-            event.preventDefault(); // Previne o comportamento padrão do formulário
+            event.preventDefault();
 
-            // Coletando os dados do formulário
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
             const whatsapp = document.getElementById('whatsapp').value;
 
-            // Montando o objeto com os dados
-            const dados = {
-                nome,
-                email,
-                whatsapp
-            };
+            const dados = { nome, email, whatsapp };
 
             try {
-                // Enviando os dados para a API usando fetch
                 const response = await fetch(`${API_URL}/`, {
                     method: 'POST',
                     headers: {
@@ -123,10 +114,9 @@
                     body: JSON.stringify(dados),
                 });
 
-                // Verificando a resposta da API
                 const result = await response.json();
 
-                if (result.success) {
+                if (response.ok) {
                     alert('Dados enviados com sucesso!');
                 } else {
                     alert('Erro ao enviar os dados: ' + result.message);
