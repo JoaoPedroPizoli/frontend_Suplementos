@@ -1,0 +1,155 @@
+/* Fonte base e global */
+html {
+    font-size: 62.5%;
+  }
+  
+  ::selection {
+    background: #f62933; /* Cor de fundo da seleção */
+    color: #fff; /* Cor do texto selecionado */
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bg-principal {
+    background: url("../img/bg-header.png") center center no-repeat;
+    background-size: auto;
+    height: 100vh !important;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1d1d1d;
+    padding-bottom: 50px;
+  }
+  
+  .bg-principal h1 {
+    font-size: 4.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    padding: 50px 0 0 0;
+  }
+  
+  .bg-principal p {
+    font-size: 2.75rem;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 30px 5px 0 5px;
+  }
+  
+  @media (min-width: 576px) {
+    .bg-principal {
+      background-size: cover;
+      height: 100vh !important;
+    }
+  
+    .bg-principal h1 {
+      font-size: 4.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bolder;
+    }
+  
+    .bg-principal p {
+      font-size: 3.75rem;
+      text-align: center;
+      max-width: 50ch;
+      padding-top: 40px;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .bg-principal h1 {
+      font-size: 6.5rem;
+    }
+  
+    .bg-principal p {
+      font-size: 4.75rem;
+    }
+  }
+  
+  #btn:focus {
+    border: 0 !important;
+  }
+  
+  .bg-principal #btn {
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 0;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    transition: 0.4s;
+    padding: 5px;
+    width: 200px;
+    margin: 20px auto 0px auto;
+    font-size: 1.8rem;
+    color: #000;
+  }
+  
+  .bg-principal #btn:hover {
+    box-shadow: 8px 8px 0px 0px #fff;
+    color: #fff !important;
+    background-color: #000;
+  }
+  
+  @media (min-width: 992px) {
+    .bg-principal #btn {
+      width: 300px;
+      font-size: 3rem;
+    }
+  }
+  
+  .redes-sociais {
+    gap: 10px;
+  }
+  
+  .bg-principal i {
+    font-size: 3.8rem;
+    color: #fff;
+    transition: 0.3s;
+    padding: 19px 10px 0 10px;
+  }
+  
+  .bg-principal i:hover {
+    color: #ff0000;
+  }
+  
+  @media (min-width: 992px) {
+    .redes-sociais {
+      gap: 60px;
+    }
+  
+    .bg-principal i {
+      font-size: 4.8rem;
+      color: #fff;
+      padding-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .redes-sociais {
+      gap: 70px;
+    }
+  
+    .bg-principal i {
+      font-size: 5.3rem;
+      padding-top: 40px;
+      padding-bottom: 0px;
+    }
+  }
+  
